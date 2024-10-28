@@ -2,6 +2,7 @@ import { defaultConfig, Grid, GridItem, Stack } from "@chakra-ui/react";
 import * as Theme from "../theme.ts";
 
 import "./App.css";
+import NavBar from "./components/NavBar.tsx";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
           lg: `"nav nav" "aside main"`,
         }}
       >
-        <GridItem area="nav" bg="coral">
-          Nav
+        <GridItem area="nav">
+          <NavBar />
         </GridItem>
         <Stack hideFrom={{ mdOnly: "md", smOnly: "sm" }}>
           <GridItem area="aside" bg="gold">
