@@ -1,14 +1,29 @@
-import { useState } from "react";
-import { Button } from "@chakra-ui/react";
+import { defaultConfig, Grid, GridItem, Stack } from "@chakra-ui/react";
+import * as Theme from "../theme.ts";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      <div>
-        <Button>Button</Button>
-      </div>
+      <Grid
+        templateAreas={{
+          base: `"nav" "main"`,
+          lg: `"nav nav" "aside main"`,
+        }}
+      >
+        <GridItem area="nav" bg="coral">
+          Nav
+        </GridItem>
+        <Stack hideFrom={{ mdOnly: "md", smOnly: "sm" }}>
+          <GridItem area="aside" bg="gold">
+            Aside
+          </GridItem>
+        </Stack>
+        <GridItem area="main" bg="dodgerblue">
+          Main
+        </GridItem>
+      </Grid>
     </>
   );
 }
