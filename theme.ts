@@ -1,13 +1,13 @@
-import { createSystem, defaultConfig, defineConfig } from "@chakra-ui/react"
+import { createSystem, defineConfig } from "@chakra-ui/react"
 
 const config = defineConfig({
   theme: {
-    breakpoints: {
-      tablet: "992px",
-      desktop: "1200px",
-      wide: "1400px",
+    tokens: {
+      colors: {},
     },
   },
 })
 
-export default createSystem(defaultConfig, config)
+const system = createSystem(config)
+
+export default system;

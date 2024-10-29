@@ -10,10 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/cli": "^3.0.1",
     "@chakra-ui/react": "^3.0.1",
     "@emotion/react": "^11.13.3",
+    "add": "^2.0.6",
+    "axios": "^1.7.7",
+    "color-mode": "^0.1.0",
+    "dotenv": "^16.4.5",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "snippet": "^0.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

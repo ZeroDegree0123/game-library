@@ -3,6 +3,7 @@ import * as Theme from "../theme.ts";
 
 import "./App.css";
 import NavBar from "./components/NavBar.tsx";
+import GameGrid from "./components/GameGrid.tsx";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           </GridItem>
         </Stack>
         <GridItem area="main" bg="dodgerblue">
-          Main
+          <GameGrid />
         </GridItem>
       </Grid>
     </>
