@@ -39,7 +39,7 @@ const PlatformIconList = ({ platforms }: Props) => {
   //     Goal: Render platform icons instead of platform names
 
   return (
-    <HStack marginY={1}>
+    <HStack marginY={1} flexWrap="wrap">
       {platforms.map((platform) => (
         <Text color="gray.500">{platform.name}</Text>
         // <Icon as={iconMap[platform.slug]} />

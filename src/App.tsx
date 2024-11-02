@@ -4,6 +4,7 @@ import * as Theme from "../theme.ts";
 import "./App.css";
 import NavBar from "./components/NavBar.tsx";
 import GameGrid from "./components/GameGrid.tsx";
+import GenreList from "./components/GenreList.tsx";
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
           <NavBar />
         </GridItem>
         <Stack hideFrom={{ mdOnly: "md", smOnly: "sm" }}>
-          <GridItem area="aside" bg="gold">
-            Aside
+          <GridItem area="aside">
+            <GenreList />
           </GridItem>
         </Stack>
         <GridItem area="main">
