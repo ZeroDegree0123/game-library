@@ -41,7 +41,9 @@ const PlatformIconList = ({ platforms }: Props) => {
   return (
     <HStack marginY={1} flexWrap="wrap">
       {platforms.map((platform) => (
-        <Text color="gray.500">{platform.name}</Text>
+        <Text key={platform.id} color="gray.500">
+          {platform.name}
+        </Text>
         // <Icon as={iconMap[platform.slug]} />
       ))}
     </HStack>
