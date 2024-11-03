@@ -26,7 +26,7 @@ const PlatformSelector = ({ onSelectedPlatform, selectedPlatform }: Props) => {
           {selectedPlatform?.name || "Platforms"} <HiSortDescending />
         </Button>
       </MenuTrigger>
-      <MenuContent>
+      <MenuContent position="absolute" marginTop="600px">
         {data.map((platform) => (
           <MenuItem
             onClick={() => onSelectedPlatform(platform)}
