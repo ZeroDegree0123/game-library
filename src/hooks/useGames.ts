@@ -1,4 +1,3 @@
-import { Genre } from "./useGenre";
 import useData from "./useData";
 import { GameQuery } from "@/App";
 
@@ -21,7 +20,8 @@ const useGames = (gameQuery: GameQuery) =>
     params: {
       genres: gameQuery.genre?.id, 
       platforms: gameQuery.platform?.id,
-      ordering: gameQuery.sortOrder
+      ordering: gameQuery.sortOrder,
+      search: gameQuery.searchText
     }}, 
     [gameQuery])
 
