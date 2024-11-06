@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import { StrictMode } from "react";
 // import { ChakraProvider } from "@chakra-ui/react";
 // import { Provider } from "@/components/ui/provider";
 // import { ColorModeProvider } from "@/components/ui/color-mode";
